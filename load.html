@@ -14,11 +14,84 @@
     </div>
     <!-- banner -->
     <div class="banner">
-        <div class="box"></div>
+        <div class="box">
+            <div class="title">
+                <a href="" class="title1" id="title1">账号登录</a>
+                <a href="" class="title2" id="title2">二维码登录</a>
+            </div>
+            <div class="concant" id="concant1">
+                <input class="btn1" id="phoneId" type="text" placeholder="请输入手机号"><span></span><br>
+                <input class="btn1" type="text" placeholder="请输入密码">
+                <div class="txt">
+                    <input class="btn2"type="text" placeholder="请输入验证码">
+                    <span></span> 
+                    <input class="btn3" type="button" value="看不清，换一张">
+                </div>
+                <div class="log">
+                    <i></i>
+                    <label class="true">记住登录状态</label>    
+                </div>
+                <input class="btn" type="button" value="登录">
+                <div class="zhc">
+                    <a class="zhc1" href="">注册</a>
+                    <a href="" class="forget">忘记密码</a>
+                </div>               
+            </div>
+            <div class="concant"  id="concant2" style="display:none;">
+                <img src="img/load/show.jpg" alt="">
+            </div>
+        </div>
     </div>
     <!-- footer -->
     <div class="footer">
-        
+        <div class="footer_top">
+            <a href="" class="bd">关于魅族</a>
+            <a href="" class="bd">工作机会</a>
+            <a href="" class="bd">联系我们</a>
+            <a href="" class="bd">法律声明</a>
+            <a href="" class="bd">常见问题</a>
+            <div class="met">
+                简体中文
+                <div class="met1">
+                    <a href="">English</a>
+                </div>               
+            </div>
+            <div class="service">
+                <span>客服热线</span>
+                <span>400-788-3333</span>
+                <a href="">在线客服</a>
+            </div>
+            <div class="space">
+                <a href=""><span class="space1"></span></a>
+                <a class="lis2" href=""><span class="space2"></span></a>                
+                <a href=""><span class="space3"></span></a>
+                <div class="pic1"></div>   
+            </div>    
+        </div>
+        <div class="footer_bottom">
+            &copy;2019 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">营业执照</a>   
+            <a href="">经营许可证编号: 粤B2-20130198&nbsp;&nbsp;&nbsp;</a>
+            <a href="">备案号: 粤ICP备13003602号-4&nbsp;&nbsp;&nbsp;</a>    
+        </div>
     </div>
 </body>
 </html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/register.js"></script>
+<script>
+   window.onload = function(){
+        $("phoneId").onblur = function(){
+            var r =  /^1[3-9]\d{9}$/ 
+
+            if(r.test(this.value)){
+                this.nextElementSibling.innerHTML = "√";
+            }else{
+                this.nextElementSibling.innerHTML = "×";
+            }
+        }
+        function $(id){
+            return document.getElementById(id);
+        }
+   }
+</script>

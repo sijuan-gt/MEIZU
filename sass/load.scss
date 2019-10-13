@@ -14,12 +14,12 @@ ul,li{
     width: 1200px;
     height: 65px;
     margin: 0 auto;
-}
-.header a{
-    background: url(../img/load/base.png) no-repeat 0px 0px;
-    height: 23px;
-    width: 110px;
-    margin-top: 25px;   
+    a{
+        background: url(../img/load/base.png) no-repeat 0px 0px;
+        height: 23px;
+        width: 110px;
+        margin-top: 25px;   
+    }
 }
 /* banner */
 .banner{
@@ -29,8 +29,6 @@ ul,li{
     position: relative;
 }
 .box{
-    /* height: 517px; */
-    /* width: 368px; */
     background: white;
     position: absolute;
     right: 10%;
@@ -38,37 +36,43 @@ ul,li{
     padding:72px 35px 20px;
 }
 .title{
-    widows: 298px;
-    height: 24px;
-    font-size: 18px;
-    text-align: center;
-    color: #387aff;
-    margin-bottom: 30px;   
+    font-size:18px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+.title1{
+    border-right: 2px solid gray;
+    padding-right: 20px;
+    margin-right: 20px;
+    color: black;
+}
+.title2{
+    color: #888888;
 }
 .btn1{
     height: 35px;
-    width: 300px;
+    width: 280px;
     padding-left: 10px;
     outline:none;
     margin-bottom: 20px;   
-}
-.btn2{
-    height: 35px;
-    width: 160px;
-    padding-left: 10px;
-    outline:none;
-    float: left;
-}
-.btn3{
-    height: 37px;
-    margin-left: 10px;
 }
 .txt span{
     display:block;
     float: left;
     height: 37px;
-    width: 100px;
+    width: 90px;
     border: 1px solid #b9b8b8;
+}
+.btn2{
+    height: 35px;
+    width: 150px;
+    padding-left: 10px;
+    outline:none;
+    float: left;
+}
+.btn3{
+    height: 38px;
+    margin-left: 5px;
 }
 .txt{
     margin-bottom:20px;
@@ -83,24 +87,27 @@ ul,li{
     background:url(../img/load/pic.png) no-repeat -31px -127px;
 }
 .true{
-    font-size: 12px;
-}
-.true a{
-    color: #387aff;
+    font-size: 14px;
 }
 .btn{
     height: 37px;
     width: 310px;
     background:rgb(48, 137, 221);
-    margin-top: 20px;
+    margin-top: 30px;
     border: none;
     color: white;
+    margin-bottom: 20px;
 }
-.jump{
-    color:#387aff;
+.zhc a{
+    color: #32a5e7;
     font-size: 14px;
-    display: block;
-    margin-top: 20px;
+}
+.forget{
+    float: right;
+}
+.concant{
+    height: 500px;
+    width: 500px;
 }
 /* footer */
 .footer{
