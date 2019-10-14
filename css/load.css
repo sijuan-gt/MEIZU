@@ -104,6 +104,10 @@ ul, li {
 .forget {
   float: right; }
 
+.concant {
+  height: 500px;
+  width: 500px; }
+
 /* footer */
 .footer {
   width: 1000px;

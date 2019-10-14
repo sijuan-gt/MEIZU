@@ -66,18 +66,36 @@ ul,li{
 .in img{
     width:17px;
     height: 14px;
-    margin-right: 6px;
+    margin-right: 5px;
     margin-top:7px;
     float: right;
 }
 .btn2{
     margin-left: 16px;
-    margin-right: 10px;
+    margin-right: 9px;
 }
 .hg:hover .menu{
     display:block;
 }
-
+.car{
+    position: relative;
+    left: 0;
+    top: 10px; 
+}
+.num{
+    background: rgb(197, 19, 19);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: -40px;
+    font-size: 10px;
+    color: white;
+}  
 /* banner */
 .banner{
     height: 540px;
