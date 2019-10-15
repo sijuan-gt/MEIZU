@@ -20,6 +20,12 @@ ul, li {
   background: url(../img/phone/banner.jpg) center top;
   background-size: 200% 100%; }
 
+.banner1 {
+  height: 450px;
+  width: 100%;
+  background: url(../img/phonics/banner.jpg) center top;
+  background-size: 200% 100%; }
+
 .section {
   background: #f4f4f4;
   width: 100%;
@@ -53,6 +59,11 @@ ul, li {
   background: #fff;
   box-sizing: border-box;
   transition: all .3s ease; }
+  .gl-item:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); }
+    .gl-item:hover .item-slide {
+      opacity: 1;
+      visibility: visible; }
   .gl-item a {
     display: block;
     padding-top: 40px;
@@ -67,26 +78,27 @@ ul, li {
     .gl-item a ul {
       margin: 10px 0;
       opacity: 0;
-      visibility: hidden; }
+      text-align: center;
+      display: inline-block; }
       .gl-item a ul li {
         float: left;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
+        height: 21px;
+        width: 21px;
         margin-right: 30px; }
         .gl-item a ul li img {
-          width: 100%;
-          height: 100%;
+          width: 18px;
+          height: 18px;
+          border: 1px solid transparent;
           padding: 3px;
-          border-radius: 50%;
-          border: 1px solid transparent; }
+          border-radius: 50%; }
     .gl-item a h3 {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       font-size: 23px;
       color: #333;
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+      margin-top: 10px; }
     .gl-item a .item-desc {
       display: inline-block;
       color: #666;
@@ -118,19 +130,16 @@ ul, li {
       background-color: #ff3149;
       overflow: hidden; }
 
-.active {
-  margin-left: 55px; }
-
-.goods-list-warp li:nth-child(3n) {
+.goods-list-warp .gl-item:nth-child(3n) {
   margin-right: 0px; }
 
 .pic1 a img {
-  height: 248px;
-  margin-bottom: 90px; }
+  height: 248px; }
 
 .shop h2 {
   color: #333;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  margin-top: 90px; }
 
 .recommend-slider {
   overflow: hidden;
@@ -158,39 +167,36 @@ ul, li {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 44px; }
-
-.rs-item-wrap img {
-  width: 230px;
-  min-height: 230px; }
-
-.rs-item-wrap .mod-desc {
-  margin-top: 36px;
-  text-align: center; }
-
-.rs-item-wrap .mod-desc .vm-title {
-  font-size: 21px;
-  color: #2b2b2b;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.rs-item-wrap .mod-desc .vm-price {
-  margin-top: 8px;
-  font-size: 16px;
-  color: #c00; }
-
-.rs-item-wrap .mod-desc .vm-price-text {
-  font-size: 27px; }
+  .rs-item-wrap img {
+    width: 230px;
+    min-height: 230px; }
+  .rs-item-wrap .mod-desc {
+    margin-top: 36px;
+    text-align: center; }
+    .rs-item-wrap .mod-desc .vm-title {
+      font-size: 21px;
+      color: #2b2b2b;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .rs-item-wrap .mod-desc .vm-price {
+      margin-top: 8px;
+      font-size: 16px; }
+      .rs-item-wrap .mod-desc .vm-price span {
+        color: #c00; }
+    .rs-item-wrap .mod-desc .vm-price-text {
+      font-size: 27px; }
 
 .control {
-  width: 60px;
+  width: 65px;
   height: 12px;
   margin: 0 auto;
   margin-top: 38px;
   margin-bottom: 32px; }
   .control span {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 9px;
     border: 1px solid #b0b0b0;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 7px; }
