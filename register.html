@@ -16,24 +16,27 @@
     <div class="banner">
         <div class="box">
             <p class="title">注册Flyme账号</p>
-            <input class="btn1" type="text" placeholder="请输入手机号"><br>
-            <input class="btn1" type="text" placeholder="请输入密码"><br>
-            <input class="btn1" type="text" placeholder="请再次输入密码">
-            <div class="txt">
+            <span class="yes" id="yes"></span>
+            用&nbsp;&nbsp;户&nbsp;&nbsp;名：<input  class="btn1" id="nameId" type="text" placeholder="请输入用户名"><br>
+            手机号码：<input class="btn1" id="phoneId" type="text" placeholder="请输入手机号"><br>
+            密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input class="btn1" id="passId" type="password" placeholder="请输入密码"><br>
+            确认密码：<input class="btn1" id="repeatId" type="password" placeholder="请再次输入密码">
+            <div class="txt">         
+                <em>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</em>
                 <input class="btn2"type="text" placeholder="请输入验证码">
-                <span class="result"></span> 
-                <input class="btn3" type="button" value="看不清，换一张">
-            </div>
+                <span class="result" id="result" ></span> 
+                <input class="btn3" id="btn3" type="button" value="换一张">
+            </div>             
             <div class="log">
-                <i></i>
+                <i id="dianji"></i>
                 <span class="true">注册账号即表示您同意并愿意遵守
                     <a href="" class="log1">Flyme服务协议</a>
-                    、<a href="" class="log1">法律声明</a>
+                    、<a href="" class="log1">法律声明</a><br>
                     和<a href="" class="log1">隐私声明</a>
                 </span>    
             </div>
             <input class="btn" type="button" value="立即注册">
-            <a class="jump" href="">登录</a>           
+            <a class="jump" href="load.html">登录</a>           
         </div>
     </div>
     <!-- footer -->
@@ -57,9 +60,9 @@
             </div>
             <div class="space">
                 <a href=""><span class="space1"></span></a>
-                <a class="lis2" href=""><span class="space2"></span></a>                
+                <a class="lis2" href=""><span class="space2" id="space2"></span></a>                
                 <a href=""><span class="space3"></span></a>
-                <div class="pic1"></div>   
+                <div class="pic1" id="pic1"></div>   
             </div>    
         </div>
         <div class="footer_bottom">
@@ -71,5 +74,7 @@
     </div>
 </body>
 </html>
-<script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/register.js"></script>
+
+    
+
